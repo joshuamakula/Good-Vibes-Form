@@ -8,12 +8,134 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="container-fluid bg-light">
+        <div class="container-fluid" id="contFluid">
             <div class="row">
-                <div class="col-md">
+                <div class="col-md" id="mytitle">
                     <h1>Good Vibes Form</h1>
                 </div>
             </div>
+            <div class="row" id="rowform" style="margin-bottom: 30px;">
+                <div class="col-md">
+                    <h4>Tell us something positive that happened to you today.</h4>
+                </div>
+                
+            </div>
+            <form>
+                <div class="container" id="cont">
+                    <div class="form-group row">
+                        <label for="inputName" class="col-md col-form-label mylabels">Name</label>
+                        <div class="col-md">
+                          <input type="text" class="form-control" style="width: 70%; id="inputName" placeholder="Enter Your Name" required>
+                          <div class="invalid-feedback">
+                            Please provide your Name
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-md col-form-label mylabels">Email</label>
+                        <div class="col-md">
+                          <input type="email" class="form-control" style="width: 70%; id="inputEmail3" placeholder="Enter Your Email Address" required>
+                          <div class="invalid-feedback">
+                            Please provide your Email Address.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="scale" class="col-md col-form-label mylabels">On a scale of 1-10, how good was it?</label>
+                        <div class="col-md">
+                          <input type="number" class="form-control" style="width: 70%;  id="scale" placeholder="Enter a number between 1 and 10" min="1" max="10">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inlineFormCustomSelectPref" class="col-md col-form-label mylabels">Where did it happen?</label>
+                        <div class="col-md">
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"  style="width: 70%;>
+                                <option selected>Choose...</option>
+                                <option value="1">At Home</option>
+                                <option value="2">On My commute</option>
+                                <option value="3">At Work</option>
+                                <option value="2">On The Street</option>
+                                <option value="3">Others</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inlineFormCustomSelectPref" class="col-sm col-form-label mylabels">At what time of day did it happen?</label>
+                        <div class="col-md">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                  Morning
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                  Afternoon
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                <label class="form-check-label" for="gridRadios3">
+                                  Evening
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="experience" class="col-md col-form-label mylabels">What emotions did you experience? <br>(Select all that apply)</label>
+                        <div class="col-sm">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Excited">
+                                <label class="form-check-label" for="Excited">
+                                    Excited
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Humbled" >
+                                <label class="form-check-label" for="Humbled">
+                                    Humbled
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Elated">
+                                <label class="form-check-label" for="Elated">
+                                    Elated
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Loved" >
+                                <label class="Loved" for="Loved">
+                                    Loved
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Enthusiastic" >
+                                <label class="Loved" for="Enthusiastic">
+                                    Enthusiastic
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="yourExperience" class="col-md col-form-label mylabels">Please describe your positive experience.</label>
+                        <div class="col-md">
+                            <textarea class="form-control" style="width: 70%;" id="yourExperience" rows="3" required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide your positive experience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md" id="btnSubmit">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </form>
+
         </div>
         
 

@@ -1,0 +1,28 @@
+#mytitle{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#rowform{
+    text-align: center;
+}
+.mylabels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.forminl{
+    width: 50%;
+}
+#btnSubmit{
+    text-align: center;
+}
+#contFluid{
+    background-color: rgb(169,215,233);
+}
+#cont{
+    background-color: rgb(243,243,243);
+}
